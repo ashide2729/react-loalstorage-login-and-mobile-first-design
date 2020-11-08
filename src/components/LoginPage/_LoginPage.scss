@@ -1,0 +1,45 @@
+.loginpage-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 480px;
+    height: 300px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(86, 223, 182);
+}
+
+.username-field, .password-field{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(86, 223, 182);
+    margin-bottom: 35px;
+    width: 70%;
+    font-size: medium;
+    &:focus{
+        outline: none;
+        border-bottom: 1px solid rgb(69, 143, 163);
+    }
+}
+
+.submit-button{
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(86, 223, 182);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    &:hover{
+        background-color: rgb(69, 143, 163);
+    }
+}
